@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D3B9CBA970D97417F060FEB /* Pods_Zevo360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2453863BCA0526845958019C /* Pods_Zevo360.framework */; };
+		9584F9DD2A11E88300CD87C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584F9DC2A11E88300CD87C0 /* AppDelegate.swift */; };
+		9584F9DF2A11E88300CD87C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584F9DE2A11E88300CD87C0 /* SceneDelegate.swift */; };
+		9584F9E42A11E88300CD87C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9584F9E22A11E88300CD87C0 /* Main.storyboard */; };
+		9584F9E72A11E88300CD87C0 /* Zevo360.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9584F9E52A11E88300CD87C0 /* Zevo360.xcdatamodeld */; };
+		9584F9E92A11E88500CD87C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9584F9E82A11E88500CD87C0 /* Assets.xcassets */; };
+		9584F9EC2A11E88500CD87C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9584F9EA2A11E88500CD87C0 /* LaunchScreen.storyboard */; };
+		95C573092A11EA63006ADB73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C573082A11EA63006ADB73 /* Constants.swift */; };
+		95C5730B2A11EA76006ADB73 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5730A2A11EA76006ADB73 /* APIManager.swift */; };
+		95C5730D2A11EA8C006ADB73 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5730C2A11EA8C006ADB73 /* AppUtility.swift */; };
+		95C5730F2A11EA9C006ADB73 /* APIMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5730E2A11EA9C006ADB73 /* APIMethods.swift */; };
+		95C573132A11EABC006ADB73 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C573112A11EABC006ADB73 /* ResultsTableViewCell.swift */; };
+		95C573142A11EABC006ADB73 /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95C573122A11EABC006ADB73 /* ResultsTableViewCell.xib */; };
+		95C573172A11EAE9006ADB73 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C573162A11EAE9006ADB73 /* NewsModel.swift */; };
+		95C5731A2A11EB0E006ADB73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C573192A11EB0E006ADB73 /* MainViewController.swift */; };
+		95C5731C2A11F2CF006ADB73 /* NewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C5731B2A11F2CF006ADB73 /* NewDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2453863BCA0526845958019C /* Pods_Zevo360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zevo360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9584F9D92A11E88300CD87C0 /* Zevo360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zevo360.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9584F9DC2A11E88300CD87C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9584F9DE2A11E88300CD87C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9584F9E32A11E88300CD87C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9584F9E62A11E88300CD87C0 /* Zevo360.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zevo360.xcdatamodel; sourceTree = "<group>"; };
+		9584F9E82A11E88500CD87C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9584F9EB2A11E88500CD87C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9584F9ED2A11E88500CD87C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C573082A11EA63006ADB73 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95C5730A2A11EA76006ADB73 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		95C5730C2A11EA8C006ADB73 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		95C5730E2A11EA9C006ADB73 /* APIMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethods.swift; sourceTree = "<group>"; };
+		95C573112A11EABC006ADB73 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		95C573122A11EABC006ADB73 /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsTableViewCell.xib; sourceTree = "<group>"; };
+		95C573162A11EAE9006ADB73 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		95C573192A11EB0E006ADB73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		95C5731B2A11F2CF006ADB73 /* NewDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDetailsViewController.swift; sourceTree = "<group>"; };
+		EB43B35B33ED9D1546F0E7FC /* Pods-Zevo360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zevo360.release.xcconfig"; path = "Target Support Files/Pods-Zevo360/Pods-Zevo360.release.xcconfig"; sourceTree = "<group>"; };
+		F6A6A3021622DE81F5319AE7 /* Pods-Zevo360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zevo360.debug.xcconfig"; path = "Target Support Files/Pods-Zevo360/Pods-Zevo360.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9584F9D62A11E88300CD87C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3B9CBA970D97417F060FEB /* Pods_Zevo360.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FEC6A30D240312815E3C778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2453863BCA0526845958019C /* Pods_Zevo360.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B07956D452AAC1C35299E5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6A6A3021622DE81F5319AE7 /* Pods-Zevo360.debug.xcconfig */,
+				EB43B35B33ED9D1546F0E7FC /* Pods-Zevo360.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9584F9D02A11E88300CD87C0 = {
+			isa = PBXGroup;
+			children = (
+				9584F9DB2A11E88300CD87C0 /* Zevo360 */,
+				9584F9DA2A11E88300CD87C0 /* Products */,
+				4B07956D452AAC1C35299E5D /* Pods */,
+				2FEC6A30D240312815E3C778 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9584F9DA2A11E88300CD87C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9584F9D92A11E88300CD87C0 /* Zevo360.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9584F9DB2A11E88300CD87C0 /* Zevo360 */ = {
+			isa = PBXGroup;
+			children = (
+				9584F9F32A11E89A00CD87C0 /* AppDelegate */,
+				95C573072A11EA41006ADB73 /* Supporting Files */,
+				95C573152A11EAD3006ADB73 /* Model */,
+				95C573182A11EAF8006ADB73 /* Controller */,
+				95C573102A11EAA9006ADB73 /* Views */,
+				9584F9E22A11E88300CD87C0 /* Main.storyboard */,
+				9584F9E82A11E88500CD87C0 /* Assets.xcassets */,
+				9584F9EA2A11E88500CD87C0 /* LaunchScreen.storyboard */,
+				9584F9ED2A11E88500CD87C0 /* Info.plist */,
+				9584F9E52A11E88300CD87C0 /* Zevo360.xcdatamodeld */,
+			);
+			path = Zevo360;
+			sourceTree = "<group>";
+		};
+		9584F9F32A11E89A00CD87C0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9584F9DC2A11E88300CD87C0 /* AppDelegate.swift */,
+				9584F9DE2A11E88300CD87C0 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		95C573072A11EA41006ADB73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C573082A11EA63006ADB73 /* Constants.swift */,
+				95C5730A2A11EA76006ADB73 /* APIManager.swift */,
+				95C5730C2A11EA8C006ADB73 /* AppUtility.swift */,
+				95C5730E2A11EA9C006ADB73 /* APIMethods.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95C573102A11EAA9006ADB73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95C573112A11EABC006ADB73 /* ResultsTableViewCell.swift */,
+				95C573122A11EABC006ADB73 /* ResultsTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95C573152A11EAD3006ADB73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95C573162A11EAE9006ADB73 /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95C573182A11EAF8006ADB73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95C573192A11EB0E006ADB73 /* MainViewController.swift */,
+				95C5731B2A11F2CF006ADB73 /* NewDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9584F9D82A11E88300CD87C0 /* Zevo360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9584F9F02A11E88500CD87C0 /* Build configuration list for PBXNativeTarget "Zevo360" */;
+			buildPhases = (
+				2F80363CE8CA5B5705934782 /* [CP] Check Pods Manifest.lock */,
+				9584F9D52A11E88300CD87C0 /* Sources */,
+				9584F9D62A11E88300CD87C0 /* Frameworks */,
+				9584F9D72A11E88300CD87C0 /* Resources */,
+				0ED08A86141B4722D110EFE2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zevo360;
+			productName = Zevo360;
+			productReference = 9584F9D92A11E88300CD87C0 /* Zevo360.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9584F9D12A11E88300CD87C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9584F9D82A11E88300CD87C0 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 9584F9D42A11E88300CD87C0 /* Build configuration list for PBXProject "Zevo360" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9584F9D02A11E88300CD87C0;
+			productRefGroup = 9584F9DA2A11E88300CD87C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9584F9D82A11E88300CD87C0 /* Zevo360 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9584F9D72A11E88300CD87C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9584F9EC2A11E88500CD87C0 /* LaunchScreen.storyboard in Resources */,
+				9584F9E92A11E88500CD87C0 /* Assets.xcassets in Resources */,
+				95C573142A11EABC006ADB73 /* ResultsTableViewCell.xib in Resources */,
+				9584F9E42A11E88300CD87C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ED08A86141B4722D110EFE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zevo360/Pods-Zevo360-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zevo360/Pods-Zevo360-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zevo360/Pods-Zevo360-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F80363CE8CA5B5705934782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zevo360-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9584F9D52A11E88300CD87C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9584F9E72A11E88300CD87C0 /* Zevo360.xcdatamodeld in Sources */,
+				9584F9DD2A11E88300CD87C0 /* AppDelegate.swift in Sources */,
+				95C573132A11EABC006ADB73 /* ResultsTableViewCell.swift in Sources */,
+				95C573172A11EAE9006ADB73 /* NewsModel.swift in Sources */,
+				95C5730D2A11EA8C006ADB73 /* AppUtility.swift in Sources */,
+				95C5730B2A11EA76006ADB73 /* APIManager.swift in Sources */,
+				95C5731C2A11F2CF006ADB73 /* NewDetailsViewController.swift in Sources */,
+				9584F9DF2A11E88300CD87C0 /* SceneDelegate.swift in Sources */,
+				95C5730F2A11EA9C006ADB73 /* APIMethods.swift in Sources */,
+				95C573092A11EA63006ADB73 /* Constants.swift in Sources */,
+				95C5731A2A11EB0E006ADB73 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9584F9E22A11E88300CD87C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9584F9E32A11E88300CD87C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9584F9EA2A11E88500CD87C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9584F9EB2A11E88500CD87C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9584F9EE2A11E88500CD87C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9584F9EF2A11E88500CD87C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9584F9F12A11E88500CD87C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A6A3021622DE81F5319AE7 /* Pods-Zevo360.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KQQ886464R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zevo360/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.Zevo360;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9584F9F22A11E88500CD87C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB43B35B33ED9D1546F0E7FC /* Pods-Zevo360.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KQQ886464R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zevo360/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.Zevo360;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9584F9D42A11E88300CD87C0 /* Build configuration list for PBXProject "Zevo360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9584F9EE2A11E88500CD87C0 /* Debug */,
+				9584F9EF2A11E88500CD87C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9584F9F02A11E88500CD87C0 /* Build configuration list for PBXNativeTarget "Zevo360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9584F9F12A11E88500CD87C0 /* Debug */,
+				9584F9F22A11E88500CD87C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9584F9E52A11E88300CD87C0 /* Zevo360.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9584F9E62A11E88300CD87C0 /* Zevo360.xcdatamodel */,
+			);
+			currentVersion = 9584F9E62A11E88300CD87C0 /* Zevo360.xcdatamodel */;
+			path = Zevo360.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9584F9D12A11E88300CD87C0 /* Project object */;
+}
